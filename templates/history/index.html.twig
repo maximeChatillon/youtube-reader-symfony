@@ -1,0 +1,9 @@
+
+<div class="example-wrapper">
+    <h1>Current History</h1>
+</div>
+<ul id="history" class="list-group">
+  {% for history in histories %}
+    <li class="list-group-item">{{ history.getIdHistory() }}</li>
+  {% endfor %}
+</ul>
